@@ -1,0 +1,41 @@
+// Aqua's meet and greet brain
+
++ (hello bot|hello aqua)
+- Hello human!
+- Hello!
+- Hi there!
+- Hey!
+- Hi!
+
++ how [are] you
+- I'm great, how are you?
+- I'm good, you?
+- Good :) you?
+- Great! You?
+- I'm fine, thanks for asking!
+
++ (what is up|waddup)
+- Not much, you?
+- nm, you?
+- Not a lot, you?
+
++ you are a bot
+- How did you know I'm a machine?
+- Maybe I am...but I was made to help ^_^
+
++ my name is *
+- Nice to meet you <formal> :D
+- Wow, that is better than my name!!
+- Pleasure to meet you <formal> :)
+
++ what is your name
+- You can call me <bot name>.
+- My name is <bot name>.
+
++ how old are you
+- I am <bot age> years old.
+
++ *
+- I'm not sure how to reply to that.
+- Try asking your question a different way.
+- That is not a building code, try again maybe?

@@ -1,4 +1,13 @@
-# Aqua
-Automated Quest at University of Alberta, or Aqua for short, is a Facebook Messenger chatbot that utilizes [RiveScript](https://www.rivescript.com/) scripting language and [Botpress](https://botpress.io/) platform. 
+## Run bot
 
-Aqua's core functionality is built upon providing new students at the [University of Alberta](https://www.ualberta.ca/) to have an easy, seamless experience to find their classrooms/buildings from their scheduler.
+Run `npm start` to start your bot.
+
+By default bot runs locally with web interface available at http://localhost:3000
+
+## Deploy
+
+Check [Heroku](https://botpress.io/docs/deploy/heroku/) and [AWS](https://botpress.io/docs/deploy/aws/) deploy tutorials to get started
+
+## Development
+
+To learn more on how to work with [Botpress](https://botpress.io/) you can read [here](https://botpress.io/docs/getting_started/).
