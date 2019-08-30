@@ -24,3 +24,14 @@ html, body {
     padding-left: 20%;
     padding-right: 20%;
 }
+
+.aqua {
+    padding: 1%;
+    background-color: brown;
+    color: bisque;
+}
+
+.user {
+    padding: 1%;
+    background-color: darkgray;
+}

@@ -4,6 +4,7 @@ function setup() {
     let button = select('#submit');
     let userInput = select('#user_input');
     let output = select('#output');
+    let inputMessage = select('#inputMessage');
     let username = "local-user";
 
     const buildings = {
@@ -57,6 +58,7 @@ function setup() {
         if (buildingCode in buildings) {
             for (i = 0; i < buildingArray.length; i++) {
                 if (buildingCode == buildingArray[i][0]) {
+                    inputMessage.html(input);
                     output.html("Found building: " +
                         buildingCode + " is " + buildingArray[i][1][0] + " building and is called as "
                         + buildingArray[i][1][1] + " in colloquial terms.");
