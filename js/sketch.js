@@ -6,6 +6,31 @@ function setup() {
     let output = select('#output');
     let username = "local-user";
 
+    const buildings = {
+        "AF": ["Agriculture/Forestry Center", "AgFor"],
+        "BS": ["Biological Sciences", "BioSci"],
+        "BUS": ["Alberta School of Business", "Business"],
+        "CCIS": ["Centennial Centre for Interdisciplinary Science", "See Cis"],
+        "CAB": ["Central Academic Building", "Cab"],
+        "C": ["Gunning/Lemieux Chemistry Centre", "Chem"],
+        "CSC": ["Computing Science Centre", "CompSci"],
+        "ESB": ["Earth Sciences Building", "ESB"],
+        "ECHA": ["Edmonton Clinic Health Academy", "EH KA"],
+        "ED": ["Education Centre North and South", "Ed"],
+        "ETLC": ["Engineering Teaching and Learning Complex", "ETLC"],
+        "GSB": ["General Services Building", "BioSci"],
+        "HC": ["Humanities Centre", "Humanities"],
+        "MCM": ["Pavillon McMahon", "Pavillon McMahon"],
+        "MEC": ["Mechanical Engineering", "Mec Eee"],
+        "NRE": ["Natural Resources Engineering", "N Ref"],
+        "SAB": ["South Academic Building", "Saab"],
+        "SUB": ["Students' Union Building", "Sub"],
+        "T": ["Henry Marshall Tory Building", "Tory"],
+        "TL": ["Tory Lecture Theatres", "Tory Lecture"],
+        "VVC": ["Van Vliet Complex", "Van Vliet"],
+        "V": ["V Wing", "V Wing"]
+    };
+
     let bot = new RiveScript();
     bot.loadFile([
         "../brains/greet.rive",
@@ -25,9 +50,24 @@ function setup() {
 
     function chat() {
         let input = userInput.value();
-        bot.reply(username, input).then(function(reply) {
-            output.html(reply);
-        });
+        let buildingCode = input.toUpperCase();
+        
+        let buildingArray = Object.entries(buildings);
+
+        if (buildingCode in buildings) {
+            for (i = 0; i < buildingArray.length; i++) {
+                if (buildingCode == buildingArray[i][0]) {
+                    output.html("Found building: " +
+                        buildingCode + " is " + buildingArray[i][1][0] + " building and is called as "
+                        + buildingArray[i][1][1] + " in colloquial terms.");
+                    //console.log("Found building: " + buildingCode + ", " + buildingArray[i][1][0])
+                }
+            }
+        } else {
+            bot.reply(username, input).then(function(reply) {
+                output.html(reply);
+            });
+        }
         
     }
 }

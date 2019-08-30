@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Montserrat|Nunito&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.padding {
+    padding-bottom: 2em;
+}
+
+.header {
+    padding-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    padding-left: 11.5%;
+    padding-right: 11.5%;
+}
+
+.conversation {
+    padding-left: 20%;
+    padding-right: 20%;
+}

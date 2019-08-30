@@ -5,26 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aqua</title>
+
+    <!--Lates compiled iveScript distro-->
     <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <!--Loading Regular CSS, p5JS and FontAwesome-->
+    <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="../js/sketch.js"></script>
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Aqua</h1>
+    <div class="container-fluid header content padding">
+        <div class="row padding">
+            <div class="col-12">
+                <h1 class="display-4 text-center">A.Q.U.A</h1>
+                <p class="text-center">Automated Quest at University of Alberta</p>
+                <hr>
+            </div>
+        </div>
+    </div>
 
-    <p>
-        say: <input id="user_input">
-        <button id="submit">Send</button>
-    </p>
+    <div class="container-fluid conversation">
+        <div class="row padding">
+            <div class="col-12">
+                <p>Hello, I am A.Q.U.A! I am here to help you navigate the UAlberta Campus.
+                    To find a building and directions, just type in the <strong>BUILDING CODE</strong>.
+                </p>
+                <span id="output"></span>
+            </div>
+        </div>
+    </div>
 
-    <p>
-        reply: <span id="output"></span>
-    </p>
+    <div class="container-fluid conversation">
+        <div class="row padding">
+            <div class="col-12 text-center">
+                <input id="user_input">
+                <button id="submit">Send</button>
+            </div>
+        </div>
+    </div>
+
+   
 </body>
 </html>
