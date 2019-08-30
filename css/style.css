@@ -39,3 +39,17 @@ html, body {
     padding: 1%;
     background-color: darkgray;
 }
+
+#submit {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 2em;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+img {
+    display: inline;
+}
