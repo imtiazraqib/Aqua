@@ -5,6 +5,7 @@ function setup() {
     let userInput = select('#user_input');
     let output = select('#output');
     let inputMessage = select('#inputMessage');
+    let directions = select('#directions');
     let username = "local-user";
 
     const buildings = {
@@ -65,6 +66,9 @@ function setup() {
                     //console.log("Found building: " + buildingCode + ", " + buildingArray[i][1][0])
                 }
             }
+            bot.reply(username, input).then(function(reply) {
+                directions.html(reply);
+            });
         } else {
             bot.reply(username, input).then(function(reply) {
                 output.html(reply);

@@ -31,6 +31,10 @@ html, body {
     color: bisque;
 }
 
+.aqua a {
+    color: ghostwhite;
+}
+
 .user {
     padding: 1%;
     background-color: darkgray;
