@@ -35,9 +35,9 @@ function setup() {
 
     let bot = new RiveScript();
     bot.loadFile([
-        "../brains/greet.rive",
-        "../brains/begin.rive",
-        "../brains/ehaye.rive"]).then(brainReady).catch(brainError);
+        "../../brains/greet.rive",
+        "../../brains/begin.rive",
+        "../../brains/ehaye.rive"]).then(brainReady).catch(brainError);
 
     function brainReady() {
         console.log('Aqua is ready!')
