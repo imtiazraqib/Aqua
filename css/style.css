@@ -49,7 +49,3 @@ html, body {
 #submit:hover {
     cursor: pointer;
 }
-
-img {
-    display: inline;
-}
