@@ -26,18 +26,52 @@ html, body {
 }
 
 .aqua {
+    position: relative;
     padding: 1%;
-    background-color: brown;
+    background: #800000;
     color: bisque;
+	border-radius: .4em;
 }
 
+.aqua:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #800000;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
 .aqua a {
     color: ghostwhite;
 }
 
 .user {
+    position: relative;
     padding: 1%;
-    background-color: darkgray;
+	background: #ffa448;
+    border-radius: .4em;
+    color: black;
+}
+
+.user:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #ffa448;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-right: -20px;
 }
 
 #submit {
